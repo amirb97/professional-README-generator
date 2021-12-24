@@ -5,7 +5,19 @@ const generatePage = require('./utils/generateMarkdown.js');
 
 // TODO: Create a function to write README file
 const writeFile = (fileName, data) => {
-    console.log(fileName, data);
+    return new Promise((resolve, reject) => {
+        fs.writeFile(fileName, data, err =>{
+            if (err) {
+                reject(err);
+                return;
+            }
+
+            resolve({
+                ok: true,
+                message: 'File Created!'
+            });
+        });
+    });
 };
 
 // Create a function to initialize app
@@ -156,7 +168,10 @@ init()
       return generatePage(readmeData);
   })
   .then(writeREADME => {
-      return writeFile('generated-README.md', writeREADME);
+      return writeFile('./dist/generated-README.md', writeREADME);
+  })
+  .then(writeFileResponse => {
+      console.log(writeFileResponse);
   })
   .catch(err => {
       console.log(err);
