@@ -3,7 +3,7 @@ const fs = require('fs');
 const inquirer = require('inquirer');
 const generatePage = require('./utils/generateMarkdown.js');
 
-// TODO: Create a function to write README file
+// Create a function to write README file
 const writeFile = (fileName, data) => {
     return new Promise((resolve, reject) => {
         fs.writeFile(fileName, data, err =>{
@@ -105,7 +105,7 @@ const init = () => {
             type: 'checkbox',
             name: 'license',
             message: 'Which license do you wish to use?',
-            choices: ['Apache', 'GNU GPLv3', 'MIT', 'ISC']
+            choices: ['Apache', 'GNU GPLv3', 'MIT']
         },
         {
             type: 'input',
