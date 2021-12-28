@@ -1,7 +1,7 @@
 // Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
-  if(license) {
+  if(license.length != 0) {
     for(let i=0; i<license.length; i++){
       if(license[i] === 'Apache')
       {
@@ -20,7 +20,7 @@ function renderLicenseBadge(license) {
 // Create a function that returns the license link
 // If there is no license, return an empty string
 function renderLicenseLink(license) {
-  if(license) {
+  if(license.length != 0) {
     for(let i=0; i<license.length; i++){
       if(license[i] === 'Apache')
       {
@@ -39,7 +39,7 @@ function renderLicenseLink(license) {
 // Create a function that returns the license section of README
 // If there is no license, return an empty string
 function renderLicenseSection(license) {
-  if(license) {
+  if(license.length != 0) {
     return `* [License](#license)
     
   ## License
@@ -47,6 +47,15 @@ function renderLicenseSection(license) {
   ${renderLicenseLink(license)}`;
   } else {
     return '';
+  }
+};
+
+// Function that returns a link to the live URL if the project is deployed live
+function liveLink(url) {
+  if(url){
+    return `Click [here](${url}) to go to the live deployed project!`
+  } else {
+    return ``;
   }
 };
 
@@ -59,6 +68,8 @@ function generateMarkdown(data) {
 
   ${data.description}
 
+  ${liveLink(data.liveURL)}
+
   ## Table of Contents
 
   * [Installation](#installation)
@@ -66,7 +77,29 @@ function generateMarkdown(data) {
   * [Contribution](#contribution)
   * [Tests](#tests)
   * [Questions](#questions)
-  ${renderLicenseSection(data.license)}`;
+  ${renderLicenseSection(data.license)}
+  
+  ## Installation
+  
+  ${data.installation}
+  
+  ## Usage
+  
+  ${data.usage}
+  
+  ## Contribution
+  
+  ${data.contribution}
+  
+  ## Tests
+  
+  ${data.tests}
+  
+  ## Questions
+  
+  If you have any questions you can reach me by email at ${data.email}
+  
+  Link to my [GitHub Profile](https://github.com/${data.github})`;
 }
 
 module.exports = generateMarkdown;
