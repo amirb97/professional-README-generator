@@ -1,10 +1,10 @@
-# take a hiek
-  
+# Take a Hike!
+  ![MIT License](https://img.shields.io/apm/l/atomic-design-ui.svg?)
   ## Description
 
-  ;alksdjf
+  A website were you can find hiking trails and weather forecast for your location, so that you can better plan your next hiking adventure!
 
-  
+  Click [here](github.com/amirb97/take-a-hike) to go to the live deployed project!
 
   ## Table of Contents
 
@@ -13,26 +13,30 @@
   * [Contribution](#contribution)
   * [Tests](#tests)
   * [Questions](#questions)
-  
+  * [License](#license)
+    
+  ## License
+    
+  Click here for information on the [MIT License](https://choosealicense.com/licenses/mit/)
   
   ## Installation
   
-  adsklfjl
+  No installation is required
   
   ## Usage
   
-  ads;klfj
+  Usage is as a dynamic site.  All the end user has to do is input their location into the form and hit search!
   
   ## Contribution
   
-  jasdklf;'j
+  No contributions needed or wanted
   
   ## Tests
   
-  asdfj
+  there are no tests employed on the project
   
   ## Questions
   
-  If you have any questions you can reach me by email at a
+  If you have any questions you can reach me by email at amirb2467@gmail.com
   
-  Link to my [GitHub Profile](https://github.com/sadfjk)
+  Link to my [GitHub Profile](https://github.com/amirb97)
