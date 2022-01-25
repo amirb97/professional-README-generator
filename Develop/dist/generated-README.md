@@ -1,10 +1,10 @@
-# Take a Hike!
+# Take a Hike
   ![MIT License](https://img.shields.io/apm/l/atomic-design-ui.svg?)
   ## Description
 
-  A website were you can find hiking trails and weather forecast for your location, so that you can better plan your next hiking adventure!
+  A website that takes in a users location and finds the nearest hiking trails for them to explore.  Also shows a 5 day weather forecast for the area so the user can decide which day would have the best weather for their hiking trip!
 
-  Click [here](github.com/amirb97/take-a-hike) to go to the live deployed project!
+  Click [here](https://amirb97.github.io/take-a-hike/) to go to the live deployed project!
 
   ## Table of Contents
 
@@ -21,19 +21,19 @@
   
   ## Installation
   
-  No installation is required
+  There is no installation required for this project
   
   ## Usage
   
-  Usage is as a dynamic site.  All the end user has to do is input their location into the form and hit search!
+  As a static site for the user to input their location and recieve hiking and weather information.
   
   ## Contribution
   
-  No contributions needed or wanted
+  No contribution is intended
   
   ## Tests
   
-  there are no tests employed on the project
+  There are no tests for this project
   
   ## Questions
   
